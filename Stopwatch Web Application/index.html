@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shreya's Stopwatch</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="split">
+    <!-- Left Section -->
+    <div class="left">
+      <h2 class="main-title">You're on <span>Shreya’s</span> Watch ⏱️</h2>
+      <div class="stopwatch-card">
+        <h1>Stopwatch</h1>
+        <div class="timer" id="display">00:00:00</div>
+        <div class="buttons">
+          <button class="start" id="start">Start</button>
+          <button class="stop" id="stop">Stop</button>
+          <button class="reset" id="reset">Reset</button>
+          <button class="lap" id="lap">Lap</button>
+        </div>
+        <ul id="laps" class="laps"></ul>
+      </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right">
+      <div class="illustration">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+          <circle cx="100" cy="100" r="90" fill="#fff9e6" stroke="#6d5dfc" stroke-width="6"/>
+          <line x1="100" y1="100" x2="100" y2="45" stroke="#333" stroke-width="6" stroke-linecap="round"/>
+          <line x1="100" y1="100" x2="145" y2="100" stroke="#ff6ec4" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="100" cy="100" r="5" fill="#6d5dfc"/>
+        </svg>
+        <p>Track your time with style ✨</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

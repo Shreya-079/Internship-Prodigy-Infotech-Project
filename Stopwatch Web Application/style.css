@@ -1,0 +1,126 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Split Layout */
+.split {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #fff 50%, #c7b9ff 50%);
+}
+
+/* Left Side */
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.main-title span {
+  color: #6d5dfc;
+  text-shadow: 0 0 5px rgba(109,93,252,0.6);
+}
+
+.stopwatch-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 280px;
+}
+
+.stopwatch-card h1 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.timer {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 10px 0 20px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button.start { background: #28a745; }
+button.start:hover { background: #218838; }
+
+button.stop { background: #dc3545; }
+button.stop:hover { background: #c82333; }
+
+button.reset { background: #ffc107; color: #333; }
+button.reset:hover { background: #e0a800; }
+
+button.lap { background: #17a2b8; }
+button.lap:hover { background: #117a8b; }
+
+/* Laps */
+.laps {
+  margin-top: 20px;
+  list-style: none;
+  max-height: 120px;
+  overflow-y: auto;
+  padding: 0;
+}
+
+.laps li {
+  background: #f1f1f1;
+  margin: 5px 0;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #333;
+  text-align: left;
+}
+
+/* Right Side */
+.right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.illustration {
+  text-align: center;
+}
+
+.illustration svg {
+  width: 220px;
+  margin-bottom: 15px;
+}
+
+.illustration p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
