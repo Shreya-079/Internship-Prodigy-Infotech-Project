@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tic-Tac-Toe — Neon Glass UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient glow blobs -->
+  <div class="glow-orb"></div>
+  <div class="glow-orb b"></div>
+
+  <main class="card" role="application" aria-label="Tic Tac Toe game">
+    <header class="header">
+      <div class="title">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>Tic-Tac-Toe — Neon Glass</h1>
+          <p class="subtitle">Glowing X/O, juicy click, confetti wins ✨</p>
+        </div>
+      </div>
+      <div class="controls">
+        <button class="ui" id="themeBtn" aria-pressed="false" aria-label="Toggle theme">🌙 Theme</button>
+        <button class="ui" id="resetAllBtn">↺ Reset Scores</button>
+      </div>
+    </header>
+
+    <section class="wrap">
+      <section class="board">
+        <canvas id="confetti"></canvas>
+        <div class="grid" id="grid" role="grid" aria-label="Board">
+          <!-- 9 cells injected by script.js -->
+        </div>
+      </section>
+
+      <aside class="side">
+        <div class="panel">
+          <div class="status" id="status">X starts — your move!</div>
+          <div class="badges">
+            <span class="badge">Keys: 1-9</span>
+            <span class="badge">N: New round</span>
+            <span class="badge">U: Undo</span>
+          </div>
+          <div class="score">
+            <div class="item"><div class="label">X Wins</div><div class="val" id="sx">0</div></div>
+            <div class="item"><div class="label">Draws</div><div class="val" id="sd">0</div></div>
+            <div class="item"><div class="label">O Wins</div><div class="val" id="so">0</div></div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="footer">
+            <button class="ui" id="newRoundBtn">▶︎ New Round</button>
+            <button class="ui" id="undoBtn">⟲ Undo</button>
+          </div>
+          <p class="hint">Tip: Toggle light mode for a paper-glass look.</p>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
